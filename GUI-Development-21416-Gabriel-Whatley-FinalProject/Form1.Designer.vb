@@ -188,7 +188,7 @@ Partial Class Form1
         btn_clear_list.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         btn_clear_list.Location = New Point(12, 494)
         btn_clear_list.Name = "btn_clear_list"
-        btn_clear_list.Size = New Size(107, 35)
+        btn_clear_list.Size = New Size(129, 35)
         btn_clear_list.TabIndex = 11
         btn_clear_list.Text = "Clear List"
         btn_clear_list.UseVisualStyleBackColor = True
@@ -196,9 +196,9 @@ Partial Class Form1
         ' btn_save_list
         ' 
         btn_save_list.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        btn_save_list.Location = New Point(180, 494)
+        btn_save_list.Location = New Point(157, 494)
         btn_save_list.Name = "btn_save_list"
-        btn_save_list.Size = New Size(106, 35)
+        btn_save_list.Size = New Size(129, 35)
         btn_save_list.TabIndex = 12
         btn_save_list.Text = "Save to File"
         btn_save_list.UseVisualStyleBackColor = True
@@ -208,7 +208,7 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaption
-        ClientSize = New Size(661, 556)
+        ClientSize = New Size(661, 544)
         Controls.Add(btn_save_list)
         Controls.Add(btn_clear_list)
         Controls.Add(listbox_results)
