@@ -54,26 +54,31 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.Font = New Font("Segoe UI", 20F, FontStyle.Bold)
         Label1.Location = New Point(367, 37)
         Label1.Name = "Label1"
-        Label1.Size = New Size(93, 15)
+        Label1.Size = New Size(229, 37)
         Label1.TabIndex = 1
         Label1.Text = "Converter App 2"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(367, 89)
+        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(342, 103)
         Label2.Name = "Label2"
-        Label2.Size = New Size(106, 30)
+        Label2.Size = New Size(152, 42)
         Label2.TabIndex = 2
         Label2.Text = "Enter a value and " & vbCrLf & "choose conversion"
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.RoyalBlue
         GroupBox1.Controls.Add(rdio_M_to_In)
         GroupBox1.Controls.Add(rdio_In_to_M)
-        GroupBox1.Location = New Point(367, 167)
+        GroupBox1.Font = New Font("Segoe UI", 12F)
+        GroupBox1.ForeColor = Color.White
+        GroupBox1.Location = New Point(342, 169)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(200, 132)
         GroupBox1.TabIndex = 3
@@ -82,17 +87,22 @@ Partial Class Form1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(500, 93)
+        TextBox1.BackColor = Color.RoyalBlue
+        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        TextBox1.ForeColor = Color.White
+        TextBox1.Location = New Point(500, 110)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(149, 23)
+        TextBox1.Size = New Size(149, 29)
         TextBox1.TabIndex = 4
         ' 
         ' rdio_In_to_M
         ' 
         rdio_In_to_M.AutoSize = True
+        rdio_In_to_M.Font = New Font("Segoe UI", 12F)
+        rdio_In_to_M.ForeColor = Color.White
         rdio_In_to_M.Location = New Point(27, 37)
         rdio_In_to_M.Name = "rdio_In_to_M"
-        rdio_In_to_M.Size = New Size(112, 19)
+        rdio_In_to_M.Size = New Size(142, 25)
         rdio_In_to_M.TabIndex = 0
         rdio_In_to_M.TabStop = True
         rdio_In_to_M.Text = "Inches to Meters"
@@ -101,9 +111,11 @@ Partial Class Form1
         ' rdio_M_to_In
         ' 
         rdio_M_to_In.AutoSize = True
+        rdio_M_to_In.Font = New Font("Segoe UI", 12F)
+        rdio_M_to_In.ForeColor = Color.White
         rdio_M_to_In.Location = New Point(27, 83)
         rdio_M_to_In.Name = "rdio_M_to_In"
-        rdio_M_to_In.Size = New Size(112, 19)
+        rdio_M_to_In.Size = New Size(142, 25)
         rdio_M_to_In.TabIndex = 1
         rdio_M_to_In.TabStop = True
         rdio_M_to_In.Text = "Meters to Inches"
@@ -111,9 +123,10 @@ Partial Class Form1
         ' 
         ' btn_convert
         ' 
-        btn_convert.Location = New Point(374, 335)
+        btn_convert.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btn_convert.Location = New Point(342, 307)
         btn_convert.Name = "btn_convert"
-        btn_convert.Size = New Size(75, 23)
+        btn_convert.Size = New Size(130, 35)
         btn_convert.TabIndex = 5
         btn_convert.Text = "Convert"
         btn_convert.UseVisualStyleBackColor = True
@@ -121,26 +134,30 @@ Partial Class Form1
         ' lbl_conversion_output
         ' 
         lbl_conversion_output.AutoSize = True
-        lbl_conversion_output.Location = New Point(374, 386)
+        lbl_conversion_output.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        lbl_conversion_output.Location = New Point(343, 356)
         lbl_conversion_output.Name = "lbl_conversion_output"
-        lbl_conversion_output.Size = New Size(107, 15)
+        lbl_conversion_output.Size = New Size(154, 21)
         lbl_conversion_output.TabIndex = 6
         lbl_conversion_output.Text = "Conversion Results"
+        lbl_conversion_output.Visible = False
         ' 
         ' btn_save_results
         ' 
-        btn_save_results.Location = New Point(374, 431)
+        btn_save_results.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btn_save_results.Location = New Point(342, 398)
         btn_save_results.Name = "btn_save_results"
-        btn_save_results.Size = New Size(129, 23)
+        btn_save_results.Size = New Size(129, 34)
         btn_save_results.TabIndex = 7
         btn_save_results.Text = "Save Results"
         btn_save_results.UseVisualStyleBackColor = True
         ' 
         ' btn_clear_results
         ' 
-        btn_clear_results.Location = New Point(373, 482)
+        btn_clear_results.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btn_clear_results.Location = New Point(342, 438)
         btn_clear_results.Name = "btn_clear_results"
-        btn_clear_results.Size = New Size(130, 23)
+        btn_clear_results.Size = New Size(130, 35)
         btn_clear_results.TabIndex = 8
         btn_clear_results.Text = "Clear Results"
         btn_clear_results.UseVisualStyleBackColor = True
@@ -148,35 +165,40 @@ Partial Class Form1
         ' lbl_save_msg
         ' 
         lbl_save_msg.AutoSize = True
-        lbl_save_msg.Location = New Point(374, 544)
+        lbl_save_msg.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        lbl_save_msg.Location = New Point(342, 501)
         lbl_save_msg.Name = "lbl_save_msg"
-        lbl_save_msg.Size = New Size(80, 15)
+        lbl_save_msg.Size = New Size(116, 21)
         lbl_save_msg.TabIndex = 9
         lbl_save_msg.Text = "Save Message"
+        lbl_save_msg.Visible = False
         ' 
         ' listbox_results
         ' 
+        listbox_results.Font = New Font("Segoe UI", 12F)
         listbox_results.FormattingEnabled = True
-        listbox_results.ItemHeight = 15
-        listbox_results.Location = New Point(31, 255)
+        listbox_results.ItemHeight = 21
+        listbox_results.Location = New Point(12, 229)
         listbox_results.Name = "listbox_results"
-        listbox_results.Size = New Size(255, 274)
+        listbox_results.Size = New Size(274, 256)
         listbox_results.TabIndex = 10
         ' 
         ' btn_clear_list
         ' 
-        btn_clear_list.Location = New Point(31, 544)
+        btn_clear_list.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btn_clear_list.Location = New Point(12, 494)
         btn_clear_list.Name = "btn_clear_list"
-        btn_clear_list.Size = New Size(107, 23)
+        btn_clear_list.Size = New Size(107, 35)
         btn_clear_list.TabIndex = 11
         btn_clear_list.Text = "Clear List"
         btn_clear_list.UseVisualStyleBackColor = True
         ' 
         ' btn_save_list
         ' 
-        btn_save_list.Location = New Point(180, 544)
+        btn_save_list.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        btn_save_list.Location = New Point(180, 494)
         btn_save_list.Name = "btn_save_list"
-        btn_save_list.Size = New Size(106, 23)
+        btn_save_list.Size = New Size(106, 35)
         btn_save_list.TabIndex = 12
         btn_save_list.Text = "Save to File"
         btn_save_list.UseVisualStyleBackColor = True
@@ -185,7 +207,8 @@ Partial Class Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 668)
+        BackColor = SystemColors.ActiveCaption
+        ClientSize = New Size(661, 556)
         Controls.Add(btn_save_list)
         Controls.Add(btn_clear_list)
         Controls.Add(listbox_results)

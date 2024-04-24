@@ -12,4 +12,8 @@ Public Class Form1
     Private Sub btn_save_list_Click(sender As Object, e As EventArgs) Handles btn_save_list.Click
 
     End Sub
+
+    Private Sub lbl_save_msg_Click(sender As Object, e As EventArgs) Handles lbl_save_msg.Click
+
+    End Sub
 End Class
