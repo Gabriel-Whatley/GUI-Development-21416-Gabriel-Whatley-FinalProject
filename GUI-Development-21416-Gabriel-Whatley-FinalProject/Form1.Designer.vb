@@ -223,7 +223,7 @@ Partial Class Form1
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
         Name = "Form1"
-        Text = "Form1"
+        Text = "Building Plans Conversion 2"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
