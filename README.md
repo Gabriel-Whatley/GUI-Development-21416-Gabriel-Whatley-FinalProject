@@ -2,5 +2,5 @@
 - Gabriel Whatley
 - Visual Studio 2022
 - Issues: None
-- Resources:
+- Resources: None
 
