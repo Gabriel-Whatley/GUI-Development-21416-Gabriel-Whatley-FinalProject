@@ -26,9 +26,9 @@ Partial Class Form1
         Label1 = New Label()
         Label2 = New Label()
         GroupBox1 = New GroupBox()
-        TextBox1 = New TextBox()
-        rdio_In_to_M = New RadioButton()
         rdio_M_to_In = New RadioButton()
+        rdio_In_to_M = New RadioButton()
+        textbox_input = New TextBox()
         btn_convert = New Button()
         lbl_conversion_output = New Label()
         btn_save_results = New Button()
@@ -85,19 +85,22 @@ Partial Class Form1
         GroupBox1.TabStop = False
         GroupBox1.Text = "Convert Measurement"
         ' 
-        ' TextBox1
+        ' rdio_M_to_In
         ' 
-        TextBox1.BackColor = Color.RoyalBlue
-        TextBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        TextBox1.ForeColor = Color.White
-        TextBox1.Location = New Point(500, 110)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(149, 29)
-        TextBox1.TabIndex = 4
+        rdio_M_to_In.AutoSize = True
+        rdio_M_to_In.Font = New Font("Segoe UI", 12F)
+        rdio_M_to_In.ForeColor = Color.White
+        rdio_M_to_In.Location = New Point(27, 83)
+        rdio_M_to_In.Name = "rdio_M_to_In"
+        rdio_M_to_In.Size = New Size(142, 25)
+        rdio_M_to_In.TabIndex = 1
+        rdio_M_to_In.Text = "Meters to Inches"
+        rdio_M_to_In.UseVisualStyleBackColor = True
         ' 
         ' rdio_In_to_M
         ' 
         rdio_In_to_M.AutoSize = True
+        rdio_In_to_M.Checked = True
         rdio_In_to_M.Font = New Font("Segoe UI", 12F)
         rdio_In_to_M.ForeColor = Color.White
         rdio_In_to_M.Location = New Point(27, 37)
@@ -108,18 +111,15 @@ Partial Class Form1
         rdio_In_to_M.Text = "Inches to Meters"
         rdio_In_to_M.UseVisualStyleBackColor = True
         ' 
-        ' rdio_M_to_In
+        ' textbox_input
         ' 
-        rdio_M_to_In.AutoSize = True
-        rdio_M_to_In.Font = New Font("Segoe UI", 12F)
-        rdio_M_to_In.ForeColor = Color.White
-        rdio_M_to_In.Location = New Point(27, 83)
-        rdio_M_to_In.Name = "rdio_M_to_In"
-        rdio_M_to_In.Size = New Size(142, 25)
-        rdio_M_to_In.TabIndex = 1
-        rdio_M_to_In.TabStop = True
-        rdio_M_to_In.Text = "Meters to Inches"
-        rdio_M_to_In.UseVisualStyleBackColor = True
+        textbox_input.BackColor = Color.RoyalBlue
+        textbox_input.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        textbox_input.ForeColor = Color.White
+        textbox_input.Location = New Point(500, 110)
+        textbox_input.Name = "textbox_input"
+        textbox_input.Size = New Size(149, 29)
+        textbox_input.TabIndex = 4
         ' 
         ' btn_convert
         ' 
@@ -137,10 +137,8 @@ Partial Class Form1
         lbl_conversion_output.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         lbl_conversion_output.Location = New Point(343, 356)
         lbl_conversion_output.Name = "lbl_conversion_output"
-        lbl_conversion_output.Size = New Size(154, 21)
+        lbl_conversion_output.Size = New Size(0, 21)
         lbl_conversion_output.TabIndex = 6
-        lbl_conversion_output.Text = "Conversion Results"
-        lbl_conversion_output.Visible = False
         ' 
         ' btn_save_results
         ' 
@@ -168,10 +166,8 @@ Partial Class Form1
         lbl_save_msg.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         lbl_save_msg.Location = New Point(342, 501)
         lbl_save_msg.Name = "lbl_save_msg"
-        lbl_save_msg.Size = New Size(116, 21)
+        lbl_save_msg.Size = New Size(0, 21)
         lbl_save_msg.TabIndex = 9
-        lbl_save_msg.Text = "Save Message"
-        lbl_save_msg.Visible = False
         ' 
         ' listbox_results
         ' 
@@ -217,7 +213,7 @@ Partial Class Form1
         Controls.Add(btn_save_results)
         Controls.Add(lbl_conversion_output)
         Controls.Add(btn_convert)
-        Controls.Add(TextBox1)
+        Controls.Add(textbox_input)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Controls.Add(Label1)
@@ -237,7 +233,7 @@ Partial Class Form1
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents rdio_M_to_In As RadioButton
     Friend WithEvents rdio_In_to_M As RadioButton
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents textbox_input As TextBox
     Friend WithEvents btn_convert As Button
     Friend WithEvents lbl_conversion_output As Label
     Friend WithEvents btn_save_results As Button
